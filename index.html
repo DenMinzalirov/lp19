@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HERTZBETZ casino</title>
+  <link rel="stylesheet" href="styles.css">
+
+  <link rel="icon" href="/favicon.ico" sizes="32x32">
+  <link rel="icon" type="image/svg+xml" href="/icon.svg">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+
+  <meta name="title" content="HERTZBETZ casino">
+  <meta name="description" content="Hertzbetz.io is an online casino offering slots, table games, and a unique bonus wheel experience for players.">
+  <meta name="keywords" content="Hertzbetz.io, online casino, slots, table games, bonus wheel, gambling">
+
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://hertzbetz.io/">
+  <meta property="og:title" content="HERTZBETZ casino">
+  <meta property="og:description" content="Play at Hertzbetz.io, an online casino with slots, table games, and an exciting bonus wheel.">
+  <meta property="og:image" content="https://hertzbetz.io/assets/well2.png">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="HERTZBETZ casino">
+  <meta name="twitter:description" content="Hertzbetz.io is an online casino featuring slots, table games, and a bonus wheel.">
+  <meta name="twitter:image" content="https://hertzbetz.io/assets/well2.png">
+</head>
+<body>
+  <div class="hero-video-wrap">
+    <iframe
+      class="hero-video-iframe"
+      src="https://www.youtube.com/embed/9EOGkzDDqjA?autoplay=1&mute=1&controls=0&loop=1&playlist=9EOGkzDDqjA&playsinline=1&rel=0&disablekb=1&fs=0&modestbranding=1"
+      title="Фоновое видео"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen
+    ></iframe>
+    <div class="hero-video-overlay" aria-hidden="true"></div>
+  </div>
+
+  <main class="page">
+    <div class="banner-wrap">
+      <img class="center-gif" src="assets/1407.gif" alt="Welcome Bonus">
+    </div>
+
+    <div class="form-card">
+      <div class="form-tabs">
+        <button type="button" class="form-tab form-tab--active" data-tab="email" aria-pressed="true">
+          <span class="form-tab-icon">@</span>
+          Email
+        </button>
+        <!-- <button type="button" class="form-tab" data-tab="phone" aria-pressed="false">
+          <span class="form-tab-icon">📱</span>
+          Phone number
+        </button> -->
+      </div>
+
+      <form class="reg-form" id="regForm">
+        <div class="input-wrap input-wrap--email">
+          <span class="input-icon">@</span>
+          <input type="email" class="form-input" id="reg-email" placeholder="Email address" required>
+          <div class="form-error" id="reg-email-error"></div>
+        </div>
+        <div class="input-wrap input-wrap--password">
+          <span class="input-icon">🔑</span>
+          <input type="password" class="form-input" placeholder="Password" id="passwordInput" required>
+          <button type="button" class="input-toggle-password" id="togglePassword" aria-label="Show password">
+            <span class="eye-icon">👁</span>
+          </button>
+          <div class="form-error" id="reg-password-error"></div>
+        </div>
+        <div class="input-wrap input-wrap--currency">
+          <span class="input-icon">€</span>
+          <select class="form-input form-select" id="reg-currency">
+            <option value="EUR">€ EUR | Euro</option>
+            <option value="USD">$ USD | US Dollar</option>
+            <option value="GBP">£ GBP | British Pound</option>
+          </select>
+        </div>
+        <button type="submit" class="btn-submit" id="registration-submit-btn">
+          <span class="btn-submit-icon">👤</span>
+          Fast Registration
+        </button>
+        <label class="form-check">
+          <input type="checkbox" class="form-checkbox" id="reg-terms" required>
+          <span class="form-check-text">
+            I am 18 years old. I accept
+            <a href="#" class="form-link">Privacy Policy</a>
+            and
+            <a href="#" class="form-link">Terms and Conditions</a>.
+          </span>
+        </label>
+        <div class="form-error" id="reg-terms-error"></div>
+        <div class="form-error" id="registration-submit-error"></div>
+        <a href="#" class="form-signin">
+          <span class="form-signin-icon">👤</span>
+          Sign In
+        </a>
+      </form>
+    </div>
+  </main>
+
+  <script src="dist/registration.bundle.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
